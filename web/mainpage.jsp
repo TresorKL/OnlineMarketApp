@@ -53,7 +53,7 @@
          
          <li>
              
-         <form class="" action="PaymentServlet.do" method="post">
+         <form class="" action="UserCartServlet.do" method="post">
          
          <button id="paymentBtn" type="submit" >MAKE PAYMENT</button>
          </form>

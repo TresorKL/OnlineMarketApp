@@ -21,7 +21,7 @@ import za.ac.tut.item.Item;
  *
  * @author tresorkl
  */
-public class PaymentServlet extends HttpServlet {
+public class UserCartServlet extends HttpServlet {
 
     @EJB
     private BusinessEJBLocal businessEJB;
@@ -39,7 +39,7 @@ public class PaymentServlet extends HttpServlet {
         session.setAttribute("totAmountDue", totAmountDue);
         
         
-        RequestDispatcher disp =request.getRequestDispatcher("payment.jsp");
+        RequestDispatcher disp =request.getRequestDispatcher("usercart.jsp");
         disp.forward(request, response);
         
     }

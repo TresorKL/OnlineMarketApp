@@ -12,7 +12,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>CART</title>
         <style>
 table {
   font-family: arial, sans-serif;
@@ -29,6 +29,21 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
+#price{
+  font-family: sans-serif;
+  font-size: 25px;  
+    
+}
+#payBtn{
+  font-family: sans-serif;
+  font-size: 25px; 
+  color: white;
+  background-color: green;
+  border: 0px;
+    
+}
+
 </style>
         
     </head>
@@ -54,10 +69,15 @@ tr:nth-child(even) {
     <td>${item.amountDue()}</td>
   </tr>
   </c:forEach>
-  
- 
    
-</table>
+  
+ </table>
+        
+  <form action="makepayment.do" action="post">
+     <h2 id="price" >TOTAL AMOUNT DUE: $<%=totAmountDue%></h2>
+     
+     <button id="payBtn" type="submit">MAKE PAYMENT</button>
+  </form> 
         
         
     

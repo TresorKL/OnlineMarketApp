@@ -5,8 +5,8 @@
         <servlet-class>za.ac.tut.web.CartServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>PaymentServlet</servlet-name>
-        <servlet-class>za.ac.tut.web.PaymentServlet</servlet-class>
+        <servlet-name>UserCartServlet</servlet-name>
+        <servlet-class>za.ac.tut.web.UserCartServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>StartSessionServlet</servlet-name>
@@ -17,8 +17,8 @@
         <url-pattern>/CartServlet.do</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>PaymentServlet</servlet-name>
-        <url-pattern>/PaymentServlet.do</url-pattern>
+        <servlet-name>UserCartServlet</servlet-name>
+        <url-pattern>/UserCartServlet.do</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>StartSessionServlet</servlet-name>
